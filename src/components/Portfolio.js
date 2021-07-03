@@ -99,7 +99,6 @@ function Item(props) {
         <hr className="hr"></hr>
         <div className="row">
           <a id="ghicon" href={props.item.github}>
-            {" "}
             GitHub
           </a>
         </div>

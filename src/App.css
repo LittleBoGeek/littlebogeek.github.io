@@ -193,14 +193,14 @@ div .links {
 .link-item:hover {
   animation: bounce 1s linear;
 }
+
 .break {
   background-color: #282c34;
   height: 24em;
   width: 100%;
   opacity: 1;
   box-sizing: border-box;
-  margin: 60px auto;
-  padding: 30px 0;
+  margin: 150px 0;
 }
 .stack-icons {
   height: 75px;
@@ -227,9 +227,11 @@ div .links {
 .flex-grid {
   display: flex;
   background-color: white;
-  height: 600px;
-  align-items: stretch;
-  padding: 5% 0;
+  justify-content: center;
+  align-content: center;
+  font-size: 20px;
+  height: fit-content;
+  padding: 7% 0;
 }
 
 .col {
@@ -246,15 +248,14 @@ div .links {
 }
 
 #ghicon {
-  border: 1.5px solid white;
   background-color: #282c34;
   color: whitesmoke;
-  font-size: 25px;
+  font-size: 23px;
   width: 160px;
   border-radius: 3px;
   font-weight: bold;
   text-align: center;
-  padding: 15px 30px;
+  padding: 20px 25px;
   text-decoration: none;
   border-radius: 3px;
 }
@@ -298,22 +299,21 @@ div .links {
   }
 
   .description-styles {
-    font-size: 30px;
-    height: 100%;
-    width: 80%;
-    margin-top: 10%;
+    position: relative;
+    height: auto;
+    min-height: 100% !important;
   }
 
   .stack-icons {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
   }
   #ghicon {
-    height: 10%;
+    height: 100px;
     width: 100%;
-    padding: 15px 30px;
     font-size: 15px;
     border-radius: 5px;
+    padding: 10px 15px;
   }
   .row {
     margin: 0;
@@ -335,5 +335,12 @@ div .links {
   }
   .link-item {
     margin: 10px 5px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .links-container {
+    flex-direction: column;
+    display: flex;
   }
 }
