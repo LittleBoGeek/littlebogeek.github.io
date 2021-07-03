@@ -284,6 +284,7 @@ div .links {
   }
   .card {
     height: 150%;
+    text-align: center;
   }
   .card-body {
     font-size: 35px;
