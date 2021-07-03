@@ -24,21 +24,21 @@ function Contact() {
             <span className="links-container">
               <span className="link-item">
                 <SocialIcon
-                  style={{ height: 70, width: 70 }}
+                  style={{ height: 60, width: 60 }}
                   bgColor="#138cad"
                   url="https://twitter.com/DrewNChilds"
                 />
               </span>
               <span className="link-item">
                 <SocialIcon
-                  style={{ height: 70, width: 70 }}
+                  style={{ height: 60, width: 60 }}
                   bgColor="#138cad"
                   url="https://www.linkedin.com/in/nadia-childs/"
                 />
               </span>
               <span className="link-item">
                 <SocialIcon
-                  style={{ height: 70, width: 70 }}
+                  style={{ height: 60, width: 60 }}
                   fgColor="#282c34"
                   bgColor="#138cad"
                   url="https://github.com/LittleBoGeek"
@@ -47,7 +47,7 @@ function Contact() {
               <span className="link-item">
                 {" "}
                 <SocialIcon
-                  style={{ height: 70, width: 70 }}
+                  style={{ height: 60, width: 60 }}
                   bgColor="#138cad"
                   url="mailto:nadiadchilds@gmail.com"
                   target="_blanket"

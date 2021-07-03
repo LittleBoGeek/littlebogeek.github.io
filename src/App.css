@@ -84,7 +84,7 @@ nav a {
   height: 350px;
   background: #282c34;
   border-radius: 3px;
-  margin: 10% auto;
+  margin: 170px auto;
   color: whitesmoke;
   padding: 5%;
   text-align: center;
@@ -254,10 +254,85 @@ div .links {
   border-radius: 3px;
   font-weight: bold;
   text-align: center;
-  padding: 15px 0;
+  padding: 15px 30px;
   text-decoration: none;
+  border-radius: 3px;
 }
 
 #ghicon:hover {
   background-color: #138cad;
+}
+
+@media only screen and (max-width: 1020px) {
+  .title {
+    font-size: 50px;
+  }
+  .card-body {
+    font-size: 40px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .card {
+    height: 130%;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    font-size: 45px;
+  }
+  .card {
+    height: 150%;
+  }
+  .card-body {
+    font-size: 35px;
+    width: 95%;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  .jsfiddle {
+    display: none;
+  }
+
+  .description-styles {
+    font-size: 30px;
+    height: 100%;
+    width: 80%;
+    margin-top: 10%;
+  }
+
+  .stack-icons {
+    height: 50px;
+    width: 50px;
+  }
+  #ghicon {
+    height: 10%;
+    width: 100%;
+    padding: 15px 30px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact-photo {
+    display: none;
+  }
+  #contact {
+    font-size: 25px;
+    width: 90%;
+    height: 100%;
+    box-sizing: content-box;
+    display: flex;
+  }
+  .contact-card-body {
+    font-size: 25px;
+  }
+  .link-item {
+    margin: 10px 5px;
+  }
 }

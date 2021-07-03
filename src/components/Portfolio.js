@@ -41,7 +41,7 @@ const imgs = [
   },
   {
     description:
-      "This website was built by me primarily to share and display some of the projects I've had the pleasure of creating or collaborating on. But by itself it's also one of my favorite projects :D.",
+      "This website was built by me primarily to share and display some of the projects I've had the pleasure of creating or collaborating on. But by itself it's also one of my favorite projects :D",
     github: "https://github.com/LittleBoGeek/littlebogeek.github.io",
     jsf: "//jsfiddle.net/nadiachilds/dv1m0b2g/6/embedded/js/",
     sources: [
@@ -98,9 +98,9 @@ function Item(props) {
         </div>
         <hr className="hr"></hr>
         <div className="row">
-          <a href={props.item.github}>
+          <a id="ghicon" href={props.item.github}>
             {" "}
-            <h3 id="ghicon">GitHub </h3>
+            GitHub
           </a>
         </div>
       </div>
@@ -112,6 +112,7 @@ function Item(props) {
           src={props.item.jsf}
           allowFullScreen="allowfullscreen"
           frameBorder="0"
+          className="jsfiddle"
         ></iframe>
       </div>
     </div>

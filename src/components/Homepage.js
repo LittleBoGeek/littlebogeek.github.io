@@ -13,9 +13,11 @@ function Homepage() {
             based in Orlando.
           </p>
           <ArrowDownwardSharpIcon
+            className="arrow"
             style={{
-              height: "100px",
-              width: "100px",
+              height: "80px",
+              width: "80px",
+              overflow: "hidden",
             }}
             className="welcome-arrow"
           />
