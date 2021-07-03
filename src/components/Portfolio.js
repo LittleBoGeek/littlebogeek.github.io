@@ -106,13 +106,12 @@ function Item(props) {
       </div>
       <div className="col">
         <iframe
-          style={{ fontFamily: "Garamond" }}
+          title="jsfiddle"
           width="100%"
           height="500px"
           src={props.item.jsf}
-          allowfullscreen="allowfullscreen"
-          allowpaymentrequest
-          frameborder="0"
+          allowFullScreen="allowfullscreen"
+          frameBorder="0"
         ></iframe>
       </div>
     </div>
