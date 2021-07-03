@@ -1,0 +1,263 @@
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bounce {
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  70% {
+    transform: translateY(-15px);
+  }
+  90% {
+    transform: translateY(-4px);
+  }
+}
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  animation: infinite 60s linear infinite;
+  background-attachment: fixed;
+  margin: 0 auto;
+  animation-direction: alternate;
+}
+@keyframes infinite {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: 50% -1000px;
+  }
+}
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #282c34;
+  margin: 0 auto;
+  border-radius: 3px;
+  padding: 25px 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+nav a {
+  padding: 15px 25px;
+  text-decoration-line: none;
+  border: 1px solid white;
+  color: white;
+}
+
+.hoverstyle:hover {
+  background-color: #138cad;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    flex-direction: row;
+  }
+}
+
+.card {
+  width: 65%;
+  height: 350px;
+  background: #282c34;
+  border-radius: 3px;
+  margin: 10% auto;
+  color: whitesmoke;
+  padding: 5%;
+  text-align: center;
+  opacity: 0.9;
+  -webkit-box-shadow: 0 0 20px #282c34;
+  -moz-box-shadow: 0 0 20px #282c34;
+  box-shadow: 0 0 20px #282c34;
+}
+.title {
+  font-size: 85px;
+  font-weight: lighter;
+  margin: 0 auto;
+  padding: 0;
+}
+hr {
+  width: 50%;
+}
+.contact-hr {
+  margin-left: auto;
+  margin-top: 15px;
+}
+.card-body {
+  font-size: 35px;
+  text-align: center;
+  font-weight: lighter;
+  margin: 0 auto;
+  width: 50%;
+  padding: 0;
+}
+.welcome-arrow {
+  color: white;
+  padding: 20px 0;
+  animation: bounce 3s linear infinite;
+}
+
+footer {
+  padding: 0;
+  background-color: #138cad;
+  height: 50px;
+}
+h4 {
+  text-align: center;
+  font-size: 13px;
+  font-weight: lighter;
+}
+h3 {
+  text-align: left;
+  font-weight: lighter;
+  padding: 0;
+  margin: 22px 0;
+}
+/* Contact component styles */
+
+div .links {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 3px;
+  width: 70%;
+  height: 500px;
+  margin: 10% auto;
+  color: whitesmoke;
+  background: #282c34;
+  opacity: 0.9;
+  position: relative;
+  padding: 10px 10px;
+  -webkit-box-shadow: 0 0 20px #282c34;
+  -moz-box-shadow: 0 0 20px #282c34;
+  box-shadow: 0 0 20px #282c34;
+}
+
+.contact-photo {
+  height: 160px;
+  width: 160px;
+  padding: 0;
+  display: inline;
+  border-radius: 100%;
+  border: 1px solid #282c34;
+  opacity: 1;
+}
+
+#a {
+  border: 1px solid white;
+  color: white;
+  padding: 15px 25px;
+  text-decoration-line: none;
+  display: block;
+  margin-top: 5px;
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: 2%;
+}
+
+.links-container {
+  display: flex;
+  margin: 5px auto;
+  justify-content: center;
+}
+
+.link-item {
+  -webkit-box-shadow: 0 0 20px #282c34;
+  -moz-box-shadow: 0 0 20px #282c34;
+  box-shadow: 0 0 20px #282c34;
+  margin: 10px 15px;
+}
+
+.link-item:hover {
+  animation: bounce 1s linear;
+}
+.break {
+  background-color: #282c34;
+  height: 24em;
+  width: 100%;
+  opacity: 1;
+  box-sizing: border-box;
+  margin: 60px auto;
+  padding: 30px 0;
+}
+.stack-icons {
+  height: 75px;
+  width: 75px;
+  padding: 0 5px;
+}
+.hr {
+  width: 500px;
+  margin-left: 5px;
+}
+.app-display {
+  height: 300px;
+  width: 300px;
+  padding: 30px;
+}
+
+.app-title {
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+  padding: 30px;
+}
+
+.flex-grid {
+  display: flex;
+  background-color: white;
+  height: 600px;
+  align-items: stretch;
+  padding: 5% 0;
+}
+
+.col {
+  flex: 1;
+  padding: 5px 40px;
+  width: 60%;
+}
+.row {
+  flex: 1;
+}
+.description-styles {
+  font-size: 38px;
+  font-weight: lighter;
+}
+
+#ghicon {
+  border: 1.5px solid white;
+  background-color: #282c34;
+  color: whitesmoke;
+  font-size: 25px;
+  width: 160px;
+  border-radius: 3px;
+  font-weight: bold;
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: none;
+}
+
+#ghicon:hover {
+  background-color: #138cad;
+}
