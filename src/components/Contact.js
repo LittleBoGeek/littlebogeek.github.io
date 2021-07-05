@@ -12,7 +12,7 @@ function Contact() {
           <div className="card-content">
             <img
               className="contact-photo"
-              src={process.env.PUBLIC_URL + "/IMG_2953.jpg"}
+              src={process.env.PUBLIC_URL + "/IMG_2953.jpeg"}
               alt="clearwarning"
             />
             <hr id="contact-hr hr" />
