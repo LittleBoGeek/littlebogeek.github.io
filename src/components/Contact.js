@@ -1,5 +1,4 @@
 import { SocialIcon } from "react-social-icons";
-
 function Contact() {
   return (
     <>
@@ -12,7 +11,7 @@ function Contact() {
           <div className="card-content">
             <img
               className="contact-photo"
-              src={process.env.PUBLIC_URL + "/IMG_2953.jpeg"}
+              src={process.env.PUBLIC_URL + "/assets/profile.jpeg"}
               alt="clearwarning"
             />
             <hr id="contact-hr hr" />
