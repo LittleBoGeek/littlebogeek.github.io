@@ -88,7 +88,7 @@ nav a {
   color: whitesmoke;
   padding: 5%;
   text-align: center;
-  opacity: 0.9;
+  background: rgba(40, 44, 52, 0.9);
   -webkit-box-shadow: 0 0 20px #282c34;
   -moz-box-shadow: 0 0 20px #282c34;
   box-shadow: 0 0 20px #282c34;
@@ -162,7 +162,6 @@ div .links {
   display: inline;
   border-radius: 100%;
   border: 1px solid #282c34;
-  opacity: 1;
 }
 
 #a {
@@ -282,6 +281,7 @@ div .links {
 @media only screen and (max-width: 768px) {
   .title {
     font-size: 45px;
+    text-align: center;
   }
   .card {
     height: 150%;
@@ -335,6 +335,9 @@ div .links {
   }
   .link-item {
     margin: 10px 5px;
+  }
+  .break {
+    display: none;
   }
 }
 

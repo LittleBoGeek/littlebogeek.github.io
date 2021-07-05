@@ -1,4 +1,5 @@
 import "./App.css";
+import { useEffect } from "react";
 import Homepage from "./components/Homepage";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
@@ -7,6 +8,9 @@ import UI from "./components/UI";
 import { Route, BrowserRouter as Router } from "react-router-dom";
 
 function App() {
+  useEffect(() => {
+    document.title = "Drew Codes";
+  }, []);
   return (
     <div className="App">
       <Navbar />

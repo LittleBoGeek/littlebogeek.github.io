@@ -11,9 +11,8 @@ function Contact() {
         >
           <div className="card-content">
             <img
-              style={{ opacity: "1" }}
               className="contact-photo"
-              src={process.env.PUBLIC_URL + "/IMG_0166.jpeg"}
+              src={process.env.PUBLIC_URL + "/IMG_2953.jpg"}
               alt="clearwarning"
             />
             <hr id="contact-hr hr" />
