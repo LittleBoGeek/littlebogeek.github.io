@@ -85,25 +85,25 @@ function Portfolio() {
 function Item(props) {
   return (
     <div id="portfolio" className="flex-grid">
-      <div className="col description-styles">
+      <div className="col-two description-styles">
         <div className="row">{props.item.description}</div>
 
         <div className="row">
           {" "}
-          <hr className="hr"></hr>
+          <hr className="hr-one"></hr>
           <h3> Built with:</h3>
           {props.item.sources.map((e) => (
             <img className="stack-icons" src={e} alt="warning" />
           ))}
         </div>
-        <hr className="hr"></hr>
+        <hr className="hr-two"></hr>
         <div className="row">
           <a id="ghicon" href={props.item.github}>
             GitHub
           </a>
         </div>
       </div>
-      <div className="col">
+      <div className="col-one">
         <iframe
           title="jsfiddle"
           width="100%"

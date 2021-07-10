@@ -206,7 +206,11 @@ div .links {
   width: 75px;
   padding: 0 5px;
 }
-.hr {
+.hr-one {
+  width: 500px;
+  margin-left: 5px;
+}
+.hr-two {
   width: 500px;
   margin-left: 5px;
 }
@@ -233,7 +237,13 @@ div .links {
   padding: 7% 0;
 }
 
-.col {
+.col-two {
+  flex: 1;
+  padding: 5px 40px;
+  width: 60%;
+}
+
+.col-one {
   flex: 1;
   padding: 5px 40px;
   width: 60%;
@@ -254,16 +264,18 @@ div .links {
   border-radius: 3px;
   font-weight: bold;
   text-align: center;
-  padding: 20px 25px;
   text-decoration: none;
   border-radius: 3px;
+  padding: 22px 27%;
+  margin-top: 15px;
+  display: block;
 }
 
 #ghicon:hover {
   background-color: #138cad;
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 1024px) {
   .title {
     font-size: 50px;
   }
@@ -272,9 +284,18 @@ div .links {
     width: 90%;
     margin: 0 auto;
   }
-  .card {
-    height: 130%;
-    width: 100%;
+  .flex-grid {
+    width: 99.5%;
+    margin: 0 auto;
+  }
+  .description-styles {
+    font-size: 33px;
+  }
+  h3 {
+    font-size: 33px;
+  }
+  .jsfiddle {
+    width: 95%;
   }
 }
 
@@ -284,55 +305,60 @@ div .links {
     text-align: center;
   }
   .card {
-    height: 150%;
+    height: 100%;
     text-align: center;
+    width: 70%;
   }
   .card-body {
     font-size: 35px;
-    width: 95%;
-    text-align: left;
+
+    text-align: center;
     margin: 0 auto;
   }
-
+  /* portfolio component styles */
   .jsfiddle {
     display: none;
   }
-
-  .description-styles {
-    position: relative;
-    height: auto;
-    min-height: 100% !important;
+  .col-one {
+    display: none;
   }
-
-  .stack-icons {
-    height: 30px;
-    width: 30px;
-  }
-  #ghicon {
-    height: 100px;
-    width: 100%;
-    font-size: 15px;
-    border-radius: 5px;
-    padding: 10px 15px;
-  }
-  .row {
-    margin: 0;
+  .col-two {
+    border: 3px solid blue;
+    margin: 0 auto;
     padding: 0;
   }
-
-  .contact-photo {
+  .hr-one {
+    width: 90%;
+  }
+  .hr-two {
     display: none;
+  }
+  .stack-icons {
+    height: 50px;
+    width: 50px;
+  }
+  .description-styles {
+    width: 85%;
+  }
+  .row {
+    margin: 15px 25px;
+    width: 95%;
+  }
+  #ghicon {
+    margin: 5% auto;
+  }
+  /* contact component styles */
+  .contact-photo {
+    height: 100px;
+    width: 100px;
   }
   #contact {
     font-size: 25px;
-    width: 90%;
     height: 100%;
     box-sizing: content-box;
     display: flex;
   }
-  .contact-card-body {
-    font-size: 25px;
-  }
+
   .link-item {
     margin: 10px 5px;
   }
@@ -341,9 +367,21 @@ div .links {
   }
 }
 
-@media only screen and (max-width: 320px) {
-  .links-container {
-    flex-direction: column;
+@media only screen and (max-width: 480px) {
+  nav {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .nav-item {
+    width: 88%;
+    text-align: center;
+    border-radius: 3px;
+    margin: 0.5px auto;
   }
 }
+
+/* next goal: mobile view for 380 screen size */

@@ -6,15 +6,15 @@ function Navbar() {
   return (
     <div id="home">
       <nav>
-        <AnchorLink className="hoverstyle" href="#home">
+        <AnchorLink className="hoverstyle nav-item" href="#home">
           {" "}
           About
         </AnchorLink>
-        <AnchorLink className="hoverstyle" href="#portfolio">
+        <AnchorLink className="hoverstyle nav-item" href="#portfolio">
           Portfolio
         </AnchorLink>
 
-        <AnchorLink className="hoverstyle" href="#contact">
+        <AnchorLink className="hoverstyle nav-item" href="#contact">
           Contact
         </AnchorLink>
       </nav>
