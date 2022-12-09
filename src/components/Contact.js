@@ -24,13 +24,6 @@ function Contact() {
                 <SocialIcon
                   style={{ height: 60, width: 60 }}
                   bgColor="#138cad"
-                  url="https://twitter.com/DrewNChilds"
-                />
-              </span>
-              <span className="link-item">
-                <SocialIcon
-                  style={{ height: 60, width: 60 }}
-                  bgColor="#138cad"
                   url="https://www.linkedin.com/in/nadia-childs/"
                 />
               </span>
