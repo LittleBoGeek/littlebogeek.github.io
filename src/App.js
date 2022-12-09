@@ -6,6 +6,7 @@ import Portfolio from "./components/Portfolio";
 import Navbar from "./components/Navbar";
 import UI from "./components/UI";
 import { Route, BrowserRouter as Router } from "react-router-dom";
+import { CompatRouter } from "react-router-dom-v5-compat";
 
 function App() {
   useEffect(() => {
@@ -20,9 +21,11 @@ function App() {
       <UI />
       <Contact />
       <Router>
-        <Route exact path="/homepage" component={Homepage} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/portfolio" component={Portfolio} />
+        <CompatRouter>
+          <Route exact path="/homepage" component={Homepage} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/portfolio" component={Portfolio} />
+        </CompatRouter>
       </Router>{" "}
     </div>
   );
