@@ -9,7 +9,9 @@
 /coverage
 
 # production
-/build
+build
+public/build
+
 
 # misc
 .DS_Store
@@ -23,3 +25,5 @@ yarn-debug.log*
 yarn-error.log*
 
 .vercel
+
+.cache
