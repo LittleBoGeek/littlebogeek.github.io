@@ -7,7 +7,6 @@ function Navbar() {
     <div id="home">
       <nav>
         <AnchorLink className="hoverstyle nav-item" href="#home">
-          {" "}
           About
         </AnchorLink>
         <AnchorLink className="hoverstyle nav-item" href="#portfolio">
