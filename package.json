@@ -6,6 +6,9 @@
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
     "@material-ui/styles": "^4.11.4",
+    "@remix-run/node": "^1.8.2",
+    "@remix-run/react": "^1.8.2",
+    "@remix-run/serve": "^1.8.2",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -14,8 +17,7 @@
     "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-material-ui-carousel": "^2.2.6",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0",
+    "react-router-dom": "^6.4.5",
     "react-scripts": "4.0.3",
     "react-social-icons": "^5.4.1",
     "react-use-scroll-snap": "0.0.3",
@@ -23,10 +25,9 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "remix build",
+    "dev": "remix dev",
+    "start": "remix-serve build"
   },
   "eslintConfig": {
     "extends": [
@@ -45,5 +46,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.8.2"
   }
 }
