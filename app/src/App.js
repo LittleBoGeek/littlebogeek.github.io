@@ -5,7 +5,7 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Navbar from "./components/Navbar";
 import UI from "./components/UI";
-import { Route, BrowserRouter, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   useEffect(() => {
