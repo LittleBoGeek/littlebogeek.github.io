@@ -307,8 +307,12 @@ div .links {
   .card {
     height: 100%;
     text-align: center;
-    width: 70%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+
   .card-body {
     font-size: 35px;
 

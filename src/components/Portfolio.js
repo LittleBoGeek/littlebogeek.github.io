@@ -89,7 +89,6 @@ function Item(props) {
         <div className="row">{props.item.description}</div>
 
         <div className="row">
-          {" "}
           <hr className="hr-one"></hr>
           <h3> Built with:</h3>
           {props.item.sources.map((e) => (
