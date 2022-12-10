@@ -6,14 +6,22 @@ function Navbar() {
   return (
     <div id="home">
       <nav>
-        <AnchorLink className="hoverstyle nav-item" href="#home">
+        <AnchorLink
+          className="hoverstyle nav-item"
+          href="#home"
+          style={{ fontFamily: "system-ui", fontWeight: "lighter" }}
+        >
           About
         </AnchorLink>
-        <AnchorLink className="hoverstyle nav-item" href="#portfolio">
+        {/* <AnchorLink className="hoverstyle nav-item" href="#portfolio">
           Portfolio
-        </AnchorLink>
+        </AnchorLink> */}
 
-        <AnchorLink className="hoverstyle nav-item" href="#contact">
+        <AnchorLink
+          className="hoverstyle nav-item"
+          href="#contact"
+          style={{ fontFamily: "system-ui", fontWeight: "lighter" }}
+        >
           Contact
         </AnchorLink>
       </nav>

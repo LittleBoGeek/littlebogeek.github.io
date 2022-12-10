@@ -1,56 +1,48 @@
-import { Outlet } from "@remix-run/react";
+import { Links } from "@remix-run/react";
+import styles from "../src/App.css";
+import Homepage from "../src/components/Homepage";
+import Navbar from "../src/components/Navbar";
+import UI from "../src/components/UI";
+import Portfolio from "../src/components/Portfolio";
+import Contact from "../src/components/Contact";
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
 
 export default function Root() {
   return (
     <html lang="en">
       <head>
-        <meta charset="utf-8" />
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
         <meta
           name="description"
           content="Web site created using create-react-app"
         />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-        {/* <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    --> */}
-        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-        {/* <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    --> */}
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <Links />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster+Two:ital,wght@1,700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&family=Martian+Mono:wght@100&display=swap"
           rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
         />
         <title>React App</title>
       </head>
 
-      <body style="background-image: url(/gary-scott.jpg)">
-        <div class="modal">
+      <body style={{ backgroundImage: "url(/gary-scott.jpg)" }}>
+        <div className="modal">
           <div id="root">
-            <Outlet />
+            <Navbar />
+            <Homepage />
+            <UI />
+            <Contact />
           </div>
-          {/* <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-      --> */}
         </div>
       </body>
     </html>

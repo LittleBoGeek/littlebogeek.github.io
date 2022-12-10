@@ -1,4 +1,5 @@
 import { SocialIcon } from "react-social-icons";
+
 function Contact() {
   return (
     <>
@@ -11,11 +12,14 @@ function Contact() {
           <div className="card-content">
             <img
               className="contact-photo"
-              src={process.env.PUBLIC_URL + "/assets/profile.jpeg"}
+              src={"/assets/profile.jpeg"}
               alt="clearwarning"
             />
             <hr id="contact-hr hr" />
-            <p className="contact-card-body card-body">
+            <p
+              className="contact-card-body card-body"
+              style={{ fontFamily: "system-ui", fontWeight: "lighter" }}
+            >
               To get in touch or view more of my work, please visit any of the
               links below:
             </p>
@@ -36,7 +40,6 @@ function Contact() {
                 />
               </span>
               <span className="link-item">
-                {" "}
                 <SocialIcon
                   style={{ height: 60, width: 60 }}
                   bgColor="#138cad"
@@ -51,7 +54,7 @@ function Contact() {
           <footer
             style={{ position: "absolute", width: "100%", display: "inline" }}
           >
-            <h4>
+            <h4 style={{ fontFamily: "system-ui", fontWeight: "lighter" }}>
               Photo by{" "}
               <a href="https://unsplash.com/@garyscott_?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
                 Gary Scott
