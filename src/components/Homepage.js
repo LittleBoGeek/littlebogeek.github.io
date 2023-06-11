@@ -8,7 +8,7 @@ function Homepage() {
           <h1
             className="title"
             style={{
-              fontFamily: "Lobster, cursive;",
+              fontFamily: "Lobster, cursive",
             }}
           >
             Welcome!
